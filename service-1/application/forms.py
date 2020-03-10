@@ -53,34 +53,5 @@ class RegistrationForm(FlaskForm):
 
 class GenerateForm(FlaskForm):
 
-	goalkeeper = StringField('Goalkeeper',
-		validators=[
-			DataRequired(),
-			Length(min=2, max=100)
-        	]
-    	)
 
-
-	defender = StringField('Defender',
-		validators = [
-			DataRequired(),
-			Length(min=2, max=30)
-		]
-	)
-
-
-	midfielder = StringField('Midfielder',
-		validators = [
-			DataRequired(),
-			Length(min=2, max=100)
-        	]
-	)
-
-
-	forward = StringField('Forward',
-		validators = [
-			DataRequired(),
-			Length(min=2, max=1000)
-		]
-	 )
 	submit = SubmitField('Generate')

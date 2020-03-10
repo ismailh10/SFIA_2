@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  service-1:
+    build: ./service-1
+    ports:
+    - target: 5000
+      published: 5000
+  service-2:
+    build: ./service-2
+  service-3:
+    build: ./service-3
+  service-4:
+    build: ./service-4
+	
