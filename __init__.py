@@ -1,3 +1,5 @@
+from application import routes
+
 from flask import Flask
 import os
 
@@ -11,7 +13,6 @@ app.config['SECRET_KEY'] =  str(os.getenv('SECRET_KEY'))
 
 db = SQLAlchemy(app)
 
-from application import routes
 
 
 
